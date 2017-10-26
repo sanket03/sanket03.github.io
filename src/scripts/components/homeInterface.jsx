@@ -15,7 +15,7 @@ const HomeInterface = () => {
                     </div>
                 </div>
                 <div id = 'right-box' className='col-md-5 col-sm-5 col-lg-5'>
-                    <img src='../src/images/aml-logo.png'/>
+                    <img src='../../src/images/aml-logo.png'/>
                     <span className = 'link'>Use data analysis to take your business to a whole new level.</span> 
                     <span>Microsoft Azure Machine Learning simplifies data analysis and empowers you to find the answers your business needs.</span>
                     <span>The question isn’t whether you can find the answers.</span>
