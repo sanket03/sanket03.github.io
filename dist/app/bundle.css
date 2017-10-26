@@ -121,7 +121,8 @@
       font-size: 20px; }
     #algorithms-container #regression-container button {
       font-size: 20px;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-left: 10px; }
   #algorithms-container .algo-tile {
     border: 1px solid #808080;
     border-radius: 10px;

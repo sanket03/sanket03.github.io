@@ -42,7 +42,7 @@ const AlgorithmInterface = (props) => {
             <span>Regression</span>
             <div id ='regression-container' className='container-fluid'>
                     <img src='../../src/images/a0.png'/>
-                    <span> Let regression analysis be your crystal ball.</span>
+                    <span> Let regression analysis be your crystal ball</span>
                     <Link to='tasks-container' smooth={true} duration={200}>
                         <button type="button" className="btn btn-success" >Find out something else </button>
                     </Link>
