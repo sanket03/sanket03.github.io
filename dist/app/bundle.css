@@ -1,0 +1,205 @@
+#home-container {
+  min-height: 100vh;
+  background-color: #0092FF !important;
+  background-color: #FFF;
+  margin: 7px auto;
+  width: 95%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative; }
+  #home-container .row {
+    position: relative;
+    top: 10%;
+    padding: 0 20px; }
+    #home-container .row > div {
+      border-radius: 15px;
+      margin-bottom: 20px; }
+  #home-container #left-box {
+    background-color: #54B5FF;
+    padding: 40px;
+    min-height: 500px; }
+    #home-container #left-box > .child {
+      height: 100%;
+      background-color: #FFF;
+      font-size: 54px;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center; }
+      #home-container #left-box > .child span:nth-of-type(1) {
+        font-size: 20px;
+        font-weight: 500; }
+      #home-container #left-box > .child span:nth-of-type(2) {
+        font-weight: 700; }
+  #home-container #right-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 23px; }
+    #home-container #right-box > img {
+      height: 140px;
+      width: 140px; }
+    #home-container #right-box b {
+      font-size: 30px; }
+  #home-container #scroll-down {
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px; }
+  #home-container img {
+    z-index: 1;
+    position: relative; }
+
+#tasks-container {
+  background-color: #FFF;
+  min-height: 100vh;
+  margin: 7px auto;
+  width: 95%;
+  padding-left: 50px;
+  padding-right: 50px; }
+  #tasks-container #search-bar {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 24px;
+    display: block; }
+    #tasks-container #search-bar > span {
+      font-weight: 500;
+      display: block; }
+    #tasks-container #search-bar > #task-inputbox {
+      margin-top: 15px;
+      border-bottom: 2px solid #808080;
+      display: inline-block; }
+    #tasks-container #search-bar input, #tasks-container #search-bar input:focus {
+      outline: none;
+      border: none; }
+  #tasks-container .task-tile {
+    border: 1px solid #808080;
+    border-radius: 5px;
+    height: 250px;
+    padding: 0;
+    margin: 40px auto;
+    position: relative;
+    max-width: 425px; }
+    #tasks-container .task-tile .image-container {
+      height: 50%; }
+    #tasks-container .task-tile .ml-task {
+      font-size: 30px;
+      padding-left: 20px; }
+    #tasks-container .task-tile .link {
+      position: absolute;
+      bottom: 10px;
+      right: 15px;
+      cursor: pointer; }
+
+#algorithms-container {
+  background-color: #FFF;
+  min-height: 100vh;
+  margin: 7px auto;
+  width: 95%;
+  padding: 50px; }
+  #algorithms-container > span {
+    font-size: 35px;
+    font-weight: 600;
+    display: block;
+    padding-top: 20px; }
+  #algorithms-container #regression-container {
+    border: 1px solid #808080;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px; }
+    #algorithms-container #regression-container img {
+      height: 110px; }
+    #algorithms-container #regression-container span {
+      margin-left: 15px;
+      font-size: 20px; }
+    #algorithms-container #regression-container button {
+      font-size: 20px; }
+  #algorithms-container .algo-tile {
+    border: 1px solid #808080;
+    border-radius: 10px;
+    height: 250px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    #algorithms-container .algo-tile .algo-description-container {
+      display: flex;
+      justify-content: space-between; }
+      #algorithms-container .algo-tile .algo-description-container > img {
+        height: 110px; }
+      #algorithms-container .algo-tile .algo-description-container > div {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        width: 50%; }
+        #algorithms-container .algo-tile .algo-description-container > div .algo-title {
+          font-weight: 600; }
+    #algorithms-container .algo-tile .algo-tile-button-container {
+      display: flex;
+      justify-content: space-around; }
+      #algorithms-container .algo-tile .algo-tile-button-container button {
+        width: 130px;
+        cursor: pointer; }
+
+body {
+  background-color: #E6E6E6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 900px; }
+
+.link {
+  color: #0072FF;
+  font-weight: 600; }
+
+@media (min-width: 920px) {
+  .modal-dialog {
+    max-width: 45% !important; } }
+
+.modal-dialog .modal-content {
+  min-height: 600px;
+  padding: 20px; }
+  .modal-dialog .modal-content > img {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer; }
+  .modal-dialog .modal-content .task-title {
+    font-size: 35px;
+    font-weight: 500px; }
+  .modal-dialog .modal-content .task-description {
+    margin: 30px 0;
+    font-size: 20px; }
+  .modal-dialog .modal-content .option-title {
+    font-size: 20px; }
+  .modal-dialog .modal-content .task-options-container .row {
+    margin: 50px 0; }
+  .modal-dialog .modal-content .task-options-container .task-options {
+    text-align: center; }
+    .modal-dialog .modal-content .task-options-container .task-options > img {
+      height: 120px; }
+    .modal-dialog .modal-content .task-options-container .task-options > span {
+      display: block;
+      margin-top: 15px;
+      font-size: 18px; }
+  .modal-dialog .modal-content button {
+    cursor: pointer; }
+    @media (min-width: 920px) {
+      .modal-dialog .modal-content button {
+        width: 130px;
+        position: absolute;
+        bottom: 15px;
+        right: 15px; } }
+
+.modal-backdrop.show {
+  opacity: 0.2 !important; }
