@@ -1,0 +1,58 @@
+#tasks-container {
+    background-color: #FFF;
+    min-height: 100vh;
+    margin: 7px auto;
+    width: 95%;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    #search-bar {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 24px;
+        display: block;
+
+        >span {
+            font-weight: 500;
+            display: block;
+        }
+
+        >#task-inputbox {
+            margin-top: 15px;
+            border-bottom: 2px solid #808080;
+            display: inline-block;
+        }
+        input, input:focus {
+            outline: none;
+            border: none;
+        }
+    }
+
+    .task-tile {
+        border: 1px solid #808080;
+        border-radius: 5px;
+        height: 250px;
+        padding: 0;
+        margin: 40px auto;
+        position: relative;
+        max-width: 425px;
+
+        .image-container {
+            height: 50%;
+        }
+
+        .ml-task {
+            font-size: 30px;
+            padding-left: 20px;
+        }
+
+        .link {
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+            cursor: pointer;
+        }
+    }
+
+}
