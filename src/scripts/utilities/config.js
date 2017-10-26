@@ -2,7 +2,7 @@ const config = {};
 
 // ML task categories
 config.taskCategories = {
-    'Predict values': {
+    'Predict Values': {
         bgImage: '../../src/images/tile1.png',
         data:'Predict values'
     }, 
