@@ -20,7 +20,7 @@ const AlgorithmInterface = (props) => {
                     className = 'algo-tile col-md-6 col-lg-6 col-sm-12 col-xs-12'
                 >
                     <div className = 'algo-description-container'>
-                        <img src='../../images/a0.png'/>
+                        <img src='../../src/images/a0.png'/>
                         <div>
                             <span className = 'algo-title'>{algoTitle}</span>
                             <span className = 'algo-description'>{algoDescription}</span>
@@ -41,7 +41,7 @@ const AlgorithmInterface = (props) => {
         <div id="algorithms-container">
             <span>Regression</span>
             <div id ='regression-container' className='container-fluid'>
-                    <img src='../../images/a0.png'/>
+                    <img src='../../src/images/a0.png'/>
                     <span> Let regression analysis be your crystal ball.</span>
                     <Link to='tasks-container' smooth={true} duration={200}>
                         <button type="button" className="btn btn-success" >Find out something else </button>
