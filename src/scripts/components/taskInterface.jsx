@@ -37,7 +37,7 @@ const TaskInterface = (props) => {
                 <span>So, What do you want to find out?</span>
                 <div id='task-inputbox'>
                     <input placeholder='I want to'/>
-                    <img src='../../images/right-arrow.png'/>
+                    <img src='../../src/images/right-arrow.png'/>
                 </div>
             </div>
             <div className = 'container-fluid'>

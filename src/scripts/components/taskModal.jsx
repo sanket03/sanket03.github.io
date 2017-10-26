@@ -6,7 +6,7 @@ const TaskModal = (props) => {
     let {showModal, toggleModal, modalData} = props;
     return (
         <Modal isOpen={showModal} toggle={toggleModal}>
-            <img src='../../images/cancel.png'onClick={toggleModal}/>
+            <img src='../../src/images/cancel.png'onClick={toggleModal}/>
             <span className='task-title'>{modalData.data}</span>
             <div className='task-description'> 
                 Forecast the future by estimating the relationship between variables.
@@ -15,15 +15,15 @@ const TaskModal = (props) => {
             <div className='task-options-container container'>
                 <div className='row justify-content-around'>
                     <div className='task-options col-md-12 col-lg-3 col-sm-12 col-xs-12'>
-                        <img src='../../images/line-chart.png'/>
+                        <img src='../../src/images/line-chart.png'/>
                         <span>Estimate product demand</span>
                     </div>
                     <div className='task-options col-md-12 col-lg-3 col-sm-12 col-xs-12'>
-                        <img src='../../images/currency.png'/>
+                        <img src='../../src/images/currency.png'/>
                         <span>Predict sales figures</span>
                     </div>
                     <div className='task-options col-md-12 col-lg-3 col-sm-12 col-xs-12'>
-                        <img src='../../images/search.png'/>
+                        <img src='../../src/images/search.png'/>
                         <span>Determine equipment servicing priorities</span>
                     </div>
                 </div>

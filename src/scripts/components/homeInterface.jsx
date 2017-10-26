@@ -24,7 +24,7 @@ const HomeInterface = () => {
             </div>
             <div id='scroll-down'>
                 <Link to='tasks-container' smooth={true} duration={200}>
-                    <img src='../../images/down-arrow.png'/>
+                    <img src='../../src/images/down-arrow.png'/>
                 </Link>
             </div>
         </div>
