@@ -36,7 +36,12 @@
         padding: 0;
         margin: 40px auto;
         position: relative;
-        max-width: 425px;
+        max-width: 430px;
+
+        @media (min-width:992px)  {
+            min-width: 430px;
+        }
+
 
         .image-container {
             height: 50%;

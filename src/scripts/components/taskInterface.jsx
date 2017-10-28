@@ -11,7 +11,7 @@ const TaskInterface = (props) => {
                 return (
                     <div id = {task} 
                         key={task} 
-                        className = 'task-tile col-md-6 col-lg-5 col-sm-12 col-xs-12'
+                        className = 'task-tile col-md-6 col-lg-4 col-xl-4 col-sm-12 col-12'
                     >
                         <div className='image-container' 
                              style = {{backgroundImage: `url(${taskCategories[task].bgImage})`}}>

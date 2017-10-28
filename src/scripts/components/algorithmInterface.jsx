@@ -17,7 +17,7 @@ const AlgorithmInterface = (props) => {
             return (
                 <div  
                     key={index} 
-                    className = 'algo-tile col-md-6 col-lg-6 col-sm-12 col-xs-12'
+                    className = 'algo-tile col-md-6 col-lg-4 col-xl-4 col-sm-12 col-12'
                 >
                     <div className = 'algo-description-container'>
                         <img src='../../src/images/a0.png'/>
