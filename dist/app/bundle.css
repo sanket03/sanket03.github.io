@@ -86,7 +86,10 @@
     padding: 0;
     margin: 40px auto;
     position: relative;
-    max-width: 425px; }
+    max-width: 430px; }
+    @media (min-width: 992px) {
+      #tasks-container .task-tile {
+        min-width: 430px; } }
     #tasks-container .task-tile .image-container {
       height: 50%; }
     #tasks-container .task-tile .ml-task {
@@ -131,10 +134,13 @@
     margin-top: 40px;
     margin-bottom: 40px;
     position: relative;
-    max-width: 425px;
+    max-width: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
+    @media (min-width: 992px) {
+      #algorithms-container .algo-tile {
+        min-width: 430px; } }
     #algorithms-container .algo-tile .algo-description-container {
       display: flex;
       justify-content: space-between; }
