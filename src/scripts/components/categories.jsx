@@ -32,7 +32,7 @@ let Categories = (props) => {
                                     : 
                                         (
                                             <button className = 'btn'>
-                                                <Link to = {`/${taskTitle}?${title}`} target = '_blank'>KNOW MORE</Link>
+                                                <Link to = {`/${taskTitle}?${title}`} >KNOW MORE</Link>
                                                 </button>
                                         )
                     }
