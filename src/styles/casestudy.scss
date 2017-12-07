@@ -1,0 +1,190 @@
+@import 'pages';
+
+// Case study home styles
+#casestudy-home {
+    background-color: #3B78FF;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    @media (max-width:1024px) {
+        padding: 35px;
+    }
+
+    @media (min-width:1024px) {
+        padding: 35px 70px;
+    }
+
+    #casestudy-home-content {
+        color: #FFF;
+        grid-area: content;
+
+        > div {
+            padding: 15px;
+        }
+
+        button {
+            background-color: #203DBD;
+            color: white;
+            margin: 15px;
+        }
+
+        @media (max-width:768px) {
+            justify-content: center;
+            text-align: center;
+            #casestudy-title {
+                font-size: 35px;
+                font-weight: 500;
+            }
+            #casestudy-desc {
+                font-size: 25px;
+                font-weight: 500;
+            }
+            #casestudy-summary {
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 2;
+            }
+        }
+
+        @media (min-width:768px) {
+            #casestudy-title {
+                font-size: 35px;
+                font-weight: 500;
+            }
+            #casestudy-desc {
+                font-size: 25px;
+                font-weight: 500;
+            }
+            #casestudy-summary {
+                font-size: 25px;
+                font-weight: 300;
+                line-height: 2;
+            }
+        }
+    }
+    #casestudy-home-image {
+        grid-area: image;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width:768px) {
+        grid-template-rows: minmax(0,auto);
+        grid-template-areas: 
+        "content content image image"
+        "content content image image"
+    };
+    
+    @media (max-width:768px) {
+        text-align: center;
+        grid-template-rows: repeat(2,minmax(0,auto));
+        grid-template-areas: 
+        "image image image image"
+        "content content content content"
+    };
+}
+
+// Case study scene styles
+
+#casestudy-scene {
+    background-color: #F8F8F8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    @media (max-width:1024px) {
+        padding: 35px;
+    }
+
+    @media (min-width:1024px) {
+        padding: 35px 70px;
+    }
+
+    #casestudy-scene-content {
+        color: white;
+        grid-area: content;
+
+        > div {
+            padding: 15px;
+        }
+
+        @media (max-width:768px) {
+            text-align: center;
+            .title {
+                @include content-title-md;
+            }
+
+            .description {
+                @include content-description-md;
+            }
+        }
+
+        @media (min-width:768px) {
+            .title {
+                @include content-title-lg;
+            }
+
+            .description {
+                @include content-description-lg;
+            }
+        }
+    }
+    #casestudy-scene-image {
+        grid-area: image;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width:768px) {
+        grid-template-rows: minmax(0,auto);
+        grid-template-areas: 
+        "image image content content"
+        "image image content content"
+    };
+    
+    @media (max-width:768px) {
+        text-align: center;
+        grid-template-rows: repeat(2,minmax(0,auto));
+        grid-template-areas: 
+        "image image image image"
+        "content content content content"
+    };
+}
+
+#casestudy-otherdetails {
+    background-color: #F8F8F8;
+        @media (max-width:1024px) {
+            padding: 35px;
+        }
+
+        @media (min-width:1024px) {
+            padding: 35px 70px;
+        }
+        grid-area: content;
+        
+        > div {
+            padding: 15px;
+        }
+
+        @media (max-width:768px) {
+            text-align: center;
+            .title {
+                @include content-title-md;
+            }
+
+            .description {
+                @include content-description-md;
+            }
+        }
+
+        @media (min-width:768px) {
+            .title {
+                @include content-title-lg;
+            }
+
+            .description {
+                @include content-description-lg;
+        }
+    }
+}

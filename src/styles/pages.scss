@@ -1,0 +1,126 @@
+@import 'categories';
+
+// Mixins
+@mixin content-title-lg {
+    font-size: 35px;
+    color: #203DBD;
+}
+
+@mixin content-description-lg {
+    font-size: 25px;
+    color: #787878;
+    line-height: 2;
+    font-weight: 300;
+    > div {
+        padding: 15px 0;
+    }
+}
+
+@mixin content-title-md {
+    font-size: 30px;
+    color: #203DBD;
+}
+
+@mixin content-description-md {
+    font-size: 20px;
+    color: #787878;
+    line-height: 1.5;
+    font-weight: 300;
+    > div {
+        padding: 15px 0;
+    }
+}
+
+
+
+.page-container {
+    background-color: #F8F8F8;
+    @media (max-width:1024px) {
+        padding: 35px;
+    }
+
+    @media (min-width:1024px) {
+        padding: 35px 70px;
+    }
+
+    .upper-container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+
+        .content {
+            grid-area: content;
+            padding: 15px;
+            @media (min-width:768px) { 
+
+                .title {
+                    @include content-title-lg;
+                }
+    
+                .description {
+                    @include content-description-lg;
+                }
+            }
+
+            @media (max-width:768px) { 
+                text-align: center;
+                .title {
+                    @include content-title-md;
+                }
+    
+                .description {
+                    @include content-description-md;
+                }
+            }
+        }
+
+        img {
+            max-width: 100%;
+            grid-area: image;
+        }
+    }
+    @media (min-width:768px) {
+        &:nth-of-type(even) {
+            .upper-container {
+                grid-template-rows: repeat(2,1fr);
+                grid-template-areas: 
+                "content content image image"
+                "content content image image"
+            }
+        }
+
+        &:nth-of-type(odd) {
+            .upper-container {
+                grid-template-rows: repeat(2,1fr);
+                grid-template-areas: 
+                "image image content content"
+                "image image content content"
+            }
+        }
+
+    };
+    
+    @media (max-width:768px) {
+        .upper-container {
+            text-align: center;
+            grid-template-rows: repeat(2,minmax(0,auto));
+            grid-template-areas: 
+            "image image image image"
+            "content content content content"
+        }
+    };
+
+    .lower-carousel-container {
+        .slick-slide {
+            display: flex;
+            justify-content: center;
+        }
+        .col-12 {
+            @include boxStyles;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}

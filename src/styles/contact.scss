@@ -1,0 +1,103 @@
+#contact-container {
+    background-color: rgb(230,236,248);
+    background-size: contain;
+    padding-bottom: 30px;
+    @media (max-width:1024px) {
+        padding: 35px;
+    }
+
+    @media (min-width:1024px) {
+        padding: 35px 70px;
+    }
+    
+    #upper-container {
+        text-align: center;
+        div:nth-of-type(1) {
+            color: #203DBD;
+        }
+        @media (min-width: 768px){
+            padding: 50px 0;
+            div {
+                font-size: 25px;
+                margin: 0 10px 100px 0;              
+            }
+            div:nth-of-type(1) {
+                font-size: 55px;
+            }
+            a {
+                color: #000;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 768px){
+            div {
+                font-size: 15px;               
+            }
+            div:nth-of-type(1) {
+                font-size: 30px;
+            }
+            a {
+                color: #000;
+                font-weight: 600;
+            }
+        }
+    }
+
+// Grid styles for address container
+    #address-container {
+        display: flex;
+        @media (min-width: 768px) {
+            justify-content: space-around;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+        .locations {
+            display: grid;
+            max-width: 350px;
+            grid-template-columns: auto 300px;
+            grid-gap: 15px;
+
+            .location-icon {
+                grid-area: location-icon;
+                justify-self: end;
+                color: #203DBD;
+                font-size: 35px;   
+            }
+
+            .phone-icon {
+                @extend .location-icon;
+                grid-area: phone-icon;
+            }
+
+            .location-name {
+                grid-area:location-name;
+                font-weight: 600;
+            }
+
+            .location-address {
+                grid-area: location-address;
+                color: #203DBD;
+            }
+
+            .phone-number {
+                grid-area: phone-number;
+                color: #203DBD;
+            }
+
+            .location-map {
+                grid-area: location-map;
+            }
+
+            grid-template-rows: repeat(4, minmax(0,auto));
+            grid-template-areas:
+            "location-icon location-name"
+            ". location-map"
+            ". location-address"
+            "phone-icon phone-number";
+    }
+    }
+}

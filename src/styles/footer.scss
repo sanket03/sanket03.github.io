@@ -1,0 +1,49 @@
+#footer {
+    background-color: #3B78FF;
+    color: #FFF;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: #FFF;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        > span {
+            padding: 5px;
+        }
+    }
+
+    #social-network {
+        i {
+            margin-right: 10px;
+        }
+    }
+
+    #newsletter {
+        text-align: center;
+        .input-group {
+            height: 35px;
+            margin-top: 15px;
+
+            input {
+                background-color: #3B78FF;
+                border-color: #203DBD;
+                border-width: 2px;
+            }
+            .btn {
+                width: 80px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        * {
+            display: none;
+        }
+    }
+}
