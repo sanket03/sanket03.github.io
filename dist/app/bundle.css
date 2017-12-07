@@ -11,7 +11,8 @@
       padding: 35px 70px; }
       #home-container > * {
         position: relative;
-        bottom: 70px; } }
+        bottom: 70px;
+        max-height: 650px; } }
   #home-container #home-content {
     text-align: center;
     color: white;
@@ -618,3 +619,6 @@ button {
   width: 148px;
   cursor: pointer;
   font-family: Roboto !important; }
+
+a:hover, a:visited, a:focus {
+  text-decoration: none; }

@@ -22,3 +22,7 @@ button {
     cursor: pointer;
     font-family: Roboto !important;
 }
+
+a:hover, a:visited, a:focus {
+    text-decoration: none;
+}
