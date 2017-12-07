@@ -8,8 +8,7 @@
       padding: 35px; } }
   @media (min-width: 1024px) {
     #home-container {
-      padding: 35px 70px;
-      max-height: 650px; }
+      padding: 35px 70px; }
       #home-container > * {
         position: relative;
         bottom: 70px; } }
