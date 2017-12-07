@@ -13,6 +13,10 @@ export default class CaseStudy extends React.Component {
 
         this.getCaseStudyDetails = this.getCaseStudyDetails.bind(this);
     }
+    
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
 
     componentWillMount() {
         this.getCaseStudyDetails();
