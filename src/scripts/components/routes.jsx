@@ -8,16 +8,20 @@ import {
 import App from './app.jsx';
 import CaseStudy from './casestudy.jsx';
 import Footer from './footer.jsx';
+import Header from '../containers/header.jsx';
 
 
 let Routes = () => {
     return (
         <div>
             <Router>
+                <div>
+                <Header/>
                 <Switch>
                     <Route exact path = '/src/' render = {() => (<App/>)}/>
-                    <Route path = {`/:casestudy`} render = {(props) => (<CaseStudy {...props}/>)}/>
+                    <Route path = '/:casestudy' render = {(props) => (<CaseStudy {...props}/>)}/>
                 </Switch>
+                </div>
             </Router>
             <Footer/>
         </div>

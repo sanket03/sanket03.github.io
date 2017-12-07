@@ -3,7 +3,7 @@ import React from 'react';
 let Footer = () => {
     return (
         <div id = 'footer'>
-            <img alt = 'MAQSoftware'/>
+            <img src = '../../src/images/MAQlogo.png'/>
             <div>
                 <span>About Us</span>
                 <span>Contact</span>

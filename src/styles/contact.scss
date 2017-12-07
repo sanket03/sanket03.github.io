@@ -61,6 +61,10 @@
             grid-template-columns: auto 300px;
             grid-gap: 15px;
 
+            @media (max-width: 768px) {
+                margin: 15px 0;
+            }
+
             .location-icon {
                 grid-area: location-icon;
                 justify-self: end;

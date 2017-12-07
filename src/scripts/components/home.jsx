@@ -7,12 +7,12 @@ let Home = () => {
                 <div id = 'home-content'>
                     <div>Artificial Intelligence</div>
                     <div>How can we help you?</div>
-                    <Link to = 'categories-container' smooth={true} duration={100}>
+                    <Link to = 'categories-container' smooth={true} duration={200}>
                         <button className = 'btn'>KNOW MORE</button>
                     </Link>
                 </div>
                 <div className = 'image'>
-                    <img src = '../../images/home.png'/>
+                    <img src = '../../src/images/home.png'/>
                 </div>          
         </div>
     )

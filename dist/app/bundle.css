@@ -8,7 +8,10 @@
       padding: 35px; } }
   @media (min-width: 1024px) {
     #home-container {
-      padding: 35px 70px; } }
+      padding: 35px 70px; }
+      #home-container > * {
+        position: relative;
+        bottom: 70px; } }
   #home-container #home-content {
     text-align: center;
     color: white;
@@ -250,6 +253,9 @@
       grid-gap: 15px;
       grid-template-rows: repeat(4, minmax(0, auto));
       grid-template-areas: "location-icon location-name" ". location-map" ". location-address" "phone-icon phone-number"; }
+      @media (max-width: 768px) {
+        #contact-container #address-container .locations {
+          margin: 15px 0; } }
       #contact-container #address-container .locations .location-icon, #contact-container #address-container .locations .phone-icon {
         grid-area: location-icon;
         justify-self: end;
@@ -276,6 +282,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  #footer img {
+    grid-area: image;
+    width: 200px;
+    height: 26px;
+    margin: 25px 0; }
   #footer a {
     color: #FFF; }
   #footer > div {
@@ -298,7 +309,7 @@
         width: 80px; }
   @media (max-width: 1024px) {
     #footer * {
-      display: none; } }
+      display: none !important; } }
 
 @media (min-width: 1024px) {
   #categories-container {
@@ -565,6 +576,33 @@
       font-weight: 300; }
       #casestudy-otherdetails .description > div {
         padding: 15px 0; } }
+
+#header {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #3B78FF;
+  color: white; }
+  #header img {
+    grid-area: image;
+    width: 200px;
+    height: 26px;
+    margin: 25px 0; }
+  #header #navigation {
+    display: flex;
+    justify-content: space-between; }
+    #header #navigation * {
+      cursor: pointer; }
+    #header #navigation > * {
+      padding: 25px; }
+    #header #navigation a {
+      color: #FFF; }
+  @media (min-width: 768px) {
+    #header {
+      justify-content: space-around; } }
+  @media (max-width: 768px) {
+    #header {
+      flex-direction: column;
+      align-items: center; } }
 
 body, #app, #app-container {
   font-family: Roboto !important;

@@ -25,14 +25,14 @@ let Categories = (props) => {
                     {
                         !isCaseStudy ? 
                                         (
-                                            <ScrollLink to={title.toLowerCase()} smooth={true} duration={100}>
+                                            <ScrollLink to={title.toLowerCase()} smooth={true} duration={200}>
                                                 <button className = 'btn'>KNOW MORE</button>
                                             </ScrollLink>
                                         ) 
                                     : 
                                         (
                                             <button className = 'btn'>
-                                                <Link to = {`/${taskTitle}?${title}`} >KNOW MORE</Link>
+                                                <Link to = {`/${taskTitle}?${title}`}>KNOW MORE</Link>
                                                 </button>
                                         )
                     }

@@ -60,12 +60,12 @@ export default class CaseStudy extends React.Component {
                             <div id = 'casestudy-title'>{heading}</div>
                             <div id = 'casestudy-desc'>{this.renderContent(desc)}</div>
                             <div id = 'casestudy-summary'>{this.renderContent(summary)}</div>
-                            <Link to = 'casestudy-scene' smooth={true} duration={100}>
+                            <Link to = 'casestudy-scene' smooth={true} duration={200}>
                                 <button className = 'btn'>KNOW MORE</button>
                             </Link>
                         </div>
                         <div id = 'casestudy-home-image'>
-                            <img src = '../../images/home.png'/>
+                            <img src = '../../src/images/blog.png'/>
                         </div>
                     </div>
                     <div id = 'casestudy-scene'>
@@ -80,7 +80,7 @@ export default class CaseStudy extends React.Component {
                             </div>
                         </div>
                         <div id = 'casestudy-scene-image'>
-                            <img src = '../../images/home.png'/>
+                            <img src = '../../src/images/blog.png'/>
                         </div>
                     </div>
                     <div id = 'casestudy-otherdetails'>

@@ -56,7 +56,11 @@ export default class Pages extends React.Component {
         return element;
     }
 
-    toggleCarousel() {
+    toggleCarousel(title) {
+        // let em  = document.getElementById(title.toLowerCase());
+        // if(!this.state.collapse) {
+        //     em.scrollTop = em.scrollHeight;
+        // } 
         this.setState({
             collapse: !this.state.collapse
         });
@@ -72,13 +76,15 @@ export default class Pages extends React.Component {
         index = this.props.index;
 
         return (
-            <div id = {title.toLowerCase()} className = 'page-container'>
+            <div id = {title.toLowerCase()} className = 'page-container' key = {index}>
                 <div className = 'upper-container'>
                     <div className = 'content'>
                         <div className = 'title'>{title}</div>
                         <div className = 'description'>{this.renderContent(content)}</div>
                         { caseStudies.length > 0 ? (
-                                                        <button className = 'btn' onClick = {this.toggleCarousel}>KNOW MORE</button>
+                                                        <button className = 'btn' onClick = {this.toggleCarousel.bind(null,title)}>
+                                                            {!this.state.collapse ? 'KNOW MORE' : 'SHOW LESS'}
+                                                        </button>
                                                     ) : ''}
                     </div>
                     <img src = {imageUrl}/>
