@@ -15,7 +15,7 @@ let Routes = () => {
         <div>
             <Router basename="/src">
                 <Switch>
-                    <Route exact path = '/' render = {() => (<App/>)}/>
+                    <Route exact path = '/src/' render = {() => (<App/>)}/>
                     <Route path = {`/:casestudy`} render = {(props) => (<CaseStudy {...props}/>)}/>
                 </Switch>
             </Router>
