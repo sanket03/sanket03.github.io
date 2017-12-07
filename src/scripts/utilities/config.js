@@ -38,6 +38,7 @@ config.Pages =  [
                            natural language processing, knowledge representation and reasoning.`
                         ],
                 imageUrl : '../../src/images/overview.png',
+                caseStudies: []
             },
             {
                 title: 'Marketing',
