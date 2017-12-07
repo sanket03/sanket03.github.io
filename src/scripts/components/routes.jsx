@@ -13,10 +13,10 @@ import Footer from './footer.jsx';
 let Routes = () => {
     return (
         <div>
-            <Router>
+            <Router basename="/src">
                 <Switch>
-                    <Route exact path = 'sanket03.github.io/' render = {() => (<App/>)}/>
-                    <Route path = {`sanket03.github.io/:casestudy`} render = {(props) => (<CaseStudy {...props}/>)}/>
+                    <Route exact path = '/' render = {() => (<App/>)}/>
+                    <Route path = {`/:casestudy`} render = {(props) => (<CaseStudy {...props}/>)}/>
                 </Switch>
             </Router>
             <Footer/>
