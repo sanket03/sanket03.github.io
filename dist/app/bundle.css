@@ -83,6 +83,9 @@
       font-weight: 300; }
     #categories-container .row .col-12 button > a {
       color: white; }
+    @media (max-width: 768px) {
+      #categories-container .row .col-12 {
+        min-width: 200px; } }
     #categories-container .row .col-12 img {
       width: 100px;
       height: 100px; }
@@ -117,6 +120,9 @@
       font-weight: 300; }
     #categories-container .row .col-12 button > a {
       color: white; }
+    @media (max-width: 768px) {
+      #categories-container .row .col-12 {
+        min-width: 200px; } }
     #categories-container .row .col-12 img {
       width: 100px;
       height: 100px; }
@@ -341,6 +347,9 @@
       font-weight: 300; }
     #categories-container .row .col-12 button > a {
       color: white; }
+    @media (max-width: 768px) {
+      #categories-container .row .col-12 {
+        min-width: 200px; } }
     #categories-container .row .col-12 img {
       width: 100px;
       height: 100px; }

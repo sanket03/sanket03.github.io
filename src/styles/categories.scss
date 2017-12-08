@@ -39,6 +39,9 @@
 
         .col-12 {
             @include boxStyles;
+            @media (max-width:768px) {
+                min-width: 200px;
+            }
 
             img {
                 width: 100px;
