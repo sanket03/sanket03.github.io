@@ -18,7 +18,7 @@ let Categories = (props) => {
     } = attributes;
 
     return (
-            <div className = 'col-12 col-md-4 col-lg-4 col-xl-4 carousel-slides' key = {index}>
+            <div className = 'col-12 col-md-4 col-lg-4 col-xl-4 carousel-slides'>
                     <img src = {imageUrl}/>
                     <div className = 'task-title'>{title}</div>
                     <div className = 'task-content'>{content}</div>
@@ -30,10 +30,10 @@ let Categories = (props) => {
                                             </ScrollLink>
                                         ) 
                                     : 
-                                        (
-                                            <button className = 'btn'>
-                                                <Link to = {`/${taskTitle}?${title}`}>KNOW MORE</Link>
-                                                </button>
+                                        (                                          
+                                            <Link to = {`/${taskTitle}?${title}`}>
+                                                <button className = 'btn'>KNOW MORE</button>
+                                            </Link>                                         
                                         )
                     }
                 </div>

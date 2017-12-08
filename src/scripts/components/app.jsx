@@ -9,14 +9,14 @@ import config from '../utilities/config';
 let App = ()=>{
     let renderPages = () => {
         let element = config.Pages.map((page, index) => {
-            return <Pages attributes = {page} index = {index}/>
+            return <Pages attributes = {page} key = {index}/>
         });
     return element;
     }
 
     let renderCategories = () => {
         let element = config.taskCategories.map((task, index) => {
-            return <Categories attributes = {task} index = {index} isCaseStudy = {false}/>
+            return <Categories attributes = {task} key = {index} isCaseStudy = {false}/>
         })
         return (
             <div id = 'categories-container'>

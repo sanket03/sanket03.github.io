@@ -12,7 +12,7 @@ let Contact = () => {
                     our locations
                 </div>
                 <a href = 'mailTo:Sales@MAQSoftware.com'>
-                    Sales at MAQsoftware dot com
+                    Email: Sales at MAQsoftware dot com
                 </a>
             </div>
             <div id = 'address-container' className = 'row'>

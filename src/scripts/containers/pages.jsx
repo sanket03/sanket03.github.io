@@ -1,6 +1,6 @@
 import React from 'react';
 import Categories from '../components/categories.jsx';
-import {Link} from 'react-scroll';
+import Scroll from 'react-scroll';
 import Slider from 'react-slick';
 import {Collapse} from 'reactstrap';
 
@@ -11,6 +11,7 @@ export default class Pages extends React.Component {
     constructor(props) {
         super(props);
 
+        // Carousel config
         this.carouselSettings = {
                 responsive: [ { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } },
                               { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 2 } }, 
@@ -30,6 +31,7 @@ export default class Pages extends React.Component {
         this.state = { collapse: false };
     }
 
+    // Render page content
     renderContent(content) {
         let element = content.map((content, index) => {
             return (
@@ -40,13 +42,14 @@ export default class Pages extends React.Component {
         return element;
     }
 
+    // Render Case Studies
     renderCaseStudies(title, caseStudies) {
         let element = caseStudies.map((caseStudy, index) => {
             return (
                         <div>
                             <Categories 
                                 attributes = {caseStudy} 
-                                index = {index} 
+                                key = {index} 
                                 isCaseStudy = {true} 
                                 taskTitle = {title}
                             />
@@ -56,11 +59,15 @@ export default class Pages extends React.Component {
         return element;
     }
 
+    // Toggle carousel
     toggleCarousel(title) {
-        // let em  = document.getElementById(title.toLowerCase());
-        // if(!this.state.collapse) {
-        //     em.scrollTop = em.scrollHeight;
-        // } 
+        if(!this.state.collapse) {
+            Scroll.scroller.scrollTo(`collapse-${title.toLowerCase()}`, {
+                duration: 200,
+                delay: 100,
+                smooth: true
+              });
+        } 
         this.setState({
             collapse: !this.state.collapse
         });
@@ -72,30 +79,31 @@ export default class Pages extends React.Component {
             content,
             imageUrl,
             caseStudies
-        } = this.props.attributes,
-        index = this.props.index;
-
+        } = this.props.attributes;
+        
         return (
-            <div id = {title.toLowerCase()} className = 'page-container' key = {index}>
+            <div id = {title.toLowerCase()} className = 'page-container'>
                 <div className = 'upper-container'>
                     <div className = 'content'>
                         <div className = 'title'>{title}</div>
                         <div className = 'description'>{this.renderContent(content)}</div>
                         { caseStudies.length > 0 ? (
-                                                        <button className = 'btn' onClick = {this.toggleCarousel.bind(null,title)}>
-                                                            {!this.state.collapse ? 'KNOW MORE' : 'SHOW LESS'}
-                                                        </button>
+                                                            <button className = 'btn' onClick = {this.toggleCarousel.bind(null,title)}>
+                                                                {!this.state.collapse ? 'KNOW MORE' : 'SHOW LESS'}
+                                                            </button>
                                                     ) : ''}
                     </div>
                     <img src = {imageUrl}/>
                 </div>
-                <Collapse isOpen={this.state.collapse}>
-                    <div id = {`carousel-${title.toLowerCase()}`} className = 'lower-carousel-container'>
-                        <Slider {...this.carouselSettings}>
-                            {this.renderCaseStudies(title, caseStudies)}
-                        </Slider>
-                    </div>
-                </Collapse>
+                <div id = {`collapse-${title.toLowerCase()}`}>
+                    <Collapse isOpen={this.state.collapse}>
+                        <div id = {`carousel-${title.toLowerCase()}`} className = 'lower-carousel-container'>
+                            <Slider {...this.carouselSettings}>
+                                {this.renderCaseStudies(title, caseStudies)}
+                            </Slider>
+                        </div>
+                    </Collapse>
+                </div>
             </div>  
         );
     }
