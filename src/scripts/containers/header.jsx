@@ -17,7 +17,7 @@ export default class Header extends React.Component {
             <div id = 'header'>
                 <img src = '../../src/images/MAQlogo.png'/>
                 <div id = 'navigation'>
-                    <Link to = '/src/'><span>Home</span></Link>
+                    <Link to = '/'><span>Home</span></Link>
                     <span>FAQs</span>
                     <span>Expertise</span>
                     <ScrollLink to = 'contact-container' smooth={true} duration={200}>
