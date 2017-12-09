@@ -1,6 +1,7 @@
 var path = require("path");
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+var PROD = JSON.parse(process.env.PROD_ENV || '0');
 var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src/scripts");
 
