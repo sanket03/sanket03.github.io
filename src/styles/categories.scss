@@ -39,7 +39,7 @@
 
         .col-12 {
             @include boxStyles;
-            @media (max-width:768px) {
+            @media (max-width:576px) {
                 min-width: 200px;
             }
 
