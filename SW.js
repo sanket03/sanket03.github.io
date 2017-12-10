@@ -1,5 +1,5 @@
 let filesToCache = [
-    // 'src/.',
+    'src/.',
     'dist/app/bundle.js',
     'dist/app/bundle.css',
     // 'src/images/*',
