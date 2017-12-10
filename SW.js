@@ -45,7 +45,7 @@ self.addEventListener('activate', function(event) {
         );
       })
     );
-return     self.clients.claim();});
+});
 
 
 
