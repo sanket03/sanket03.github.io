@@ -1,12 +1,10 @@
 let filesToCache = [
     'src/.',
-    // 'dist/app/bundle.js',
-    // 'dist/app/bundle.css',
-    // 'src/images/*',
-    'src/index.html'
+    'src/index.html',
+    '402.html'
 ];
 
-let staticCacheName = 'assets-cache-1';
+let staticCacheName = 'assets-cache';
 
 // Caching static assets during install event of service worker
 self.addEventListener('install', (event) => {
