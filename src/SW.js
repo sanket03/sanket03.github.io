@@ -1,7 +1,7 @@
 let filesToCache = [
     '.',
-    '/dist/app/bundle.js',
-    '/dist/app/bundle.css',
+    // '/dist/app/bundle.js',
+    // '/dist/app/bundle.css',
     '/images/*',
     '/index.html'
 ];
