@@ -4,7 +4,7 @@
     "start_url": ".",
     "display": "standalone",
     "background_color": "#fff",
-    "description": "Simple Vue PWA",
+    "description": "",
     "icons": [{
       "src": "src/images/instagram.png",
       "sizes": "96x96",
