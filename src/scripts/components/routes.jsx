@@ -14,7 +14,7 @@ import Header from '../containers/header.jsx';
 let Routes = () => {
     return (
         <div>
-            <Router basename = '/src'>
+            <Router>
                 <div>
                 <Header/>
                 <Switch>
