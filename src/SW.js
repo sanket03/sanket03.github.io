@@ -2,8 +2,8 @@ let filesToCache = [
     '.',
     // '/dist/app/bundle.js',
     // '/dist/app/bundle.css',
-    '/images/*',
-    '/index.html'
+    'images/*',
+    'index.html'
 ];
 
 let staticCacheName = 'assets-cache-1';
