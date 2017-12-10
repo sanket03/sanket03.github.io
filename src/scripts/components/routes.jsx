@@ -13,18 +13,16 @@ import Header from '../containers/header.jsx';
 
 let Routes = () => {
     return (
-        <div>
             <Router>
                 <div>
-                <Header/>
-                <Switch>
-                    <Route exact path = '/' render = {() => (<App/>)}/>
-                    <Route path = '/:casestudy' render = {(props) => (<CaseStudy {...props}/>)}/>
-                </Switch>
+                    <Header/>
+                    <Switch>
+                        <Route exact path = '/' render = {() => (<App/>)}/>
+                        <Route path = '/:casestudy' render = {(props) => (<CaseStudy {...props}/>)}/>
+                    </Switch>
+                    <Footer/>
                 </div>
             </Router>
-            <Footer/>
-        </div>
     )
 }
 

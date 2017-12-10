@@ -1,14 +1,10 @@
+@import 'common';
+
 #contact-container {
     background-color: rgb(230,236,248);
     background-size: contain;
     padding-bottom: 30px;
-    @media (max-width:1024px) {
-        padding: 35px;
-    }
-
-    @media (min-width:1024px) {
-        padding: 35px 70px;
-    }
+    @include parentContainerPadding;
     
     #upper-container {
         text-align: center;
@@ -48,6 +44,7 @@
 // Grid styles for address container
     #address-container {
         display: flex;
+        
         @media (min-width: 768px) {
             justify-content: space-around;
         }
@@ -55,6 +52,7 @@
         @media (max-width: 768px) {
             flex-direction: column;
         }
+
         .locations {
             display: grid;
             max-width: 350px;

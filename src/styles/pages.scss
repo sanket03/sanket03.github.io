@@ -1,47 +1,8 @@
-@import 'categories';
-
-// Mixins
-@mixin content-title-lg {
-    font-size: 35px;
-    color: #203DBD;
-}
-
-@mixin content-description-lg {
-    font-size: 25px;
-    color: #787878;
-    line-height: 2;
-    font-weight: 300;
-    > div {
-        padding: 15px 0;
-    }
-}
-
-@mixin content-title-md {
-    font-size: 30px;
-    color: #203DBD;
-}
-
-@mixin content-description-md {
-    font-size: 20px;
-    color: #787878;
-    line-height: 1.5;
-    font-weight: 300;
-    > div {
-        padding: 15px 0;
-    }
-}
-
-
+@import 'common';
 
 .page-container {
     background-color: #F8F8F8;
-    @media (max-width:1024px) {
-        padding: 35px;
-    }
-
-    @media (min-width:1024px) {
-        padding: 35px 70px;
-    }
+    @include parentContainerPadding;
 
     .upper-container {
         display: grid;

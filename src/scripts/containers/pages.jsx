@@ -20,7 +20,8 @@ export default class Pages extends React.Component {
                 speed: 500,
                 slidesToShow: 3,
                 slidesToScroll: 3,
-                infinite: false
+                infinite: false,
+                arrows: false
             }
         
         this.renderCaseStudies = this.renderCaseStudies.bind(this);
