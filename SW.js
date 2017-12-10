@@ -1,7 +1,7 @@
 let filesToCache = [
     'src/.',
     'src/index.html',
-    '402.html'
+    '404.html'
 ];
 
 let staticCacheName = 'assets-cache';
