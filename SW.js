@@ -1,12 +1,12 @@
 let filesToCache = [
     'src/.',
-    'dist/app/bundle.js',
+    // 'dist/app/bundle.js',
     'dist/app/bundle.css',
     // 'src/images/*',
     'src/index.html'
 ];
 
-let staticCacheName = 'assets-cache-1';
+let staticCacheName = 'assets-cache-2';
 
 // Caching static assets during install event of service worker
 self.addEventListener('install', (event) => {
@@ -16,6 +16,8 @@ self.addEventListener('install', (event) => {
             return cache.addAll(filesToCache);
         },(error)=>{
             console.log(error);
+        }).then(()=>{
+          return self.skipWaiting();
         })
     );
 });
@@ -32,6 +34,7 @@ self.addEventListener('fetch', function(event) {
 
 self.addEventListener('activate', function(event) {
     console.log('Activating new service worker...');
+    self.clients.claim();
 
     var cacheWhitelist = [staticCacheName];
   
