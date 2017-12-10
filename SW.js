@@ -32,8 +32,6 @@ self.addEventListener('fetch', function(event) {
 
 self.addEventListener('activate', function(event) {
     console.log('Activating new service worker...');
-    self.clients.claim();
-
     var cacheWhitelist = [staticCacheName];
   
     event.waitUntil(
@@ -47,7 +45,7 @@ self.addEventListener('activate', function(event) {
         );
       })
     );
-  });
+return     self.clients.claim();});
 
 
 
