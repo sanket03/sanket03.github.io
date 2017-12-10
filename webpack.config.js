@@ -1,11 +1,12 @@
-var path = require("path");
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require("path");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var PROD = JSON.parse(process.env.PROD_ENV || '0');
-var DIST_DIR = path.resolve(__dirname, "dist");
-var SRC_DIR = path.resolve(__dirname, "src/scripts");
+const DIST_DIR = path.resolve(__dirname, "dist");
+const SRC_DIR = path.resolve(__dirname, "src/scripts");
 
-var config = {
+const config = {
     entry: SRC_DIR + "/utilities/index.js",
     output: {
         path: DIST_DIR + "/app",
@@ -29,11 +30,14 @@ var config = {
             }]
     },
     plugins: [
+        // new CleanWebpackPlugin([DIST_DIR + '/app']),
         new ExtractTextPlugin({
             filename: "bundle.css",
             disable: false,
             allChunks: true
-         })]
+         }),
+        //  new HtmlWebpackPlugin()
+        ]
 };
 
 module.exports = config;

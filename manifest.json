@@ -1,0 +1,13 @@
+{
+    "name": "MAQ AI",
+    "short_name": "MAQ AI",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Simple Vue PWA",
+    "icons": [{
+      "src": "src/images/instagram.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }]
+}
