@@ -2,6 +2,7 @@ const path = require("path");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 
 const DIST_DIR = path.resolve(__dirname, "dist");
 const SRC_DIR = path.resolve(__dirname, "src/scripts");
@@ -35,7 +36,25 @@ const config = {
             disable: false,
             allChunks: true
          }),
-        //  new HtmlWebpackPlugin()
+        //  new HtmlWebpackPlugin(),
+
+        new SWPrecacheWebpackPlugin(
+            {
+              cacheId: 'cache-1',
+              staticFileGlobs: [
+                'src/images/**.*',
+                '404.html',
+                'index.html',
+                'dist/app/bundle.js',
+                'dist/app/bundle.css'
+              ],
+              filename: 'service-worker.js',
+              minify: true,
+              dontCacheBustUrlsMatching: /\.\w{8}\./,
+              maximumFileSizeToCacheInBytes: 4194304
+            //   staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+            }
+          )
         ]
 };
 
