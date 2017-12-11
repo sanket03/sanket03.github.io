@@ -6,8 +6,7 @@
     "background_color": "#fff",
     "description": "",
     "icons": [{
-      "src": "src/images/MAQlogo.png",
-      "sizes": "96x96",
-      "type": "image/png"
+      "src": "src/images/robot.svg",
+      "sizes": "96x96"
     }]
 }
