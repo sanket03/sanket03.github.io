@@ -3,7 +3,7 @@
     "short_name": "MAQ AI",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#fff",
+    "background_color": "#3B78FF",
     "description": "",
     "icons": [{
       "src": "src/images/robot.svg",
