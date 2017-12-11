@@ -6,7 +6,7 @@
     "background_color": "#fff",
     "description": "",
     "icons": [{
-      "src": "src/images/instagram.png",
+      "src": "src/images/MAQlogo.png",
       "sizes": "96x96",
       "type": "image/png"
     }]
