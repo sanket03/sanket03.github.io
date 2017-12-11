@@ -24,7 +24,7 @@ let CaseStudy = (props) => {
             
             case 'Bots': {
                 if(casestudyName === 'Events'){
-                    return <CustomerFeedBackPatterns/>;
+                    return <FaceRecognition/>;
                 }
                 break;  
             }
