@@ -7,7 +7,7 @@ let Home = () => {
                 <div id = 'home-content'>
                     <div>Artificial Intelligence</div>
                     <div>How can we help you?</div>
-                    <Link to = 'categories-container' smooth={true} duration={200}>
+                    <Link to = 'categories-container' smooth={true} duration={200} delay = {200}>
                         <button className = 'btn'>KNOW MORE</button>
                     </Link>
                 </div>

@@ -1,9 +1,8 @@
 #home-container {
-    background-color: black;
+    background-color: #3B78FF;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-
 
     @media (max-width:1024px) {
         padding: 35px;

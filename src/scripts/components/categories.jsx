@@ -25,7 +25,7 @@ let Categories = (props) => {
                     {
                         !isCaseStudy ? 
                                         (
-                                            <ScrollLink to={title.toLowerCase()} smooth={true} duration={200}>
+                                            <ScrollLink to={title.toLowerCase()} smooth={true} delay = {200} duration={200}>
                                                 <button className = 'btn'>KNOW MORE</button>
                                             </ScrollLink>
                                         ) 

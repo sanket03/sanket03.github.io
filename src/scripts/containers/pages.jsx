@@ -13,7 +13,7 @@ export default class Pages extends React.Component {
 
         // Carousel config
         this.carouselSettings = {
-                responsive: [ { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+                responsive: [ { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1, draggable: true } },
                               { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 2 } }, 
                             ],
                 dots: true,
