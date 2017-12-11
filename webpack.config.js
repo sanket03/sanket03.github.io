@@ -51,8 +51,11 @@ const config = {
               filename: 'service-worker.js',
               minify: true,
               dontCacheBustUrlsMatching: /\.\w{8}\./,
-              maximumFileSizeToCacheInBytes: 4194304
-            //   staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+              maximumFileSizeToCacheInBytes: 4194304,
+              runtimeCaching: [{
+                urlPattern: /^https:\/\/maxcdn\.bootstrapcdn\.com\//,
+                handler: 'cacheFirst'
+              }]
             }
           )
         ]
