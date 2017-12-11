@@ -43,6 +43,7 @@ const config = {
               cacheId: 'cache-1',
               staticFileGlobs: [
                 'src/images/**.*',
+                'src/images/casestudy/**.*',
                 '404.html',
                 'index.html',
                 'dist/app/bundle.js',

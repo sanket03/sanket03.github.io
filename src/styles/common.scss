@@ -77,3 +77,80 @@
         padding: 35px 70px;
     }
 }
+
+// max height for images
+@mixin imageMaxHeight {
+    max-height: 500px;
+}
+
+// Mixin for case study content without grid
+@mixin caseStudyContent {
+    color: white;
+    padding: 15px;
+    
+
+    @media (max-width:768px) {
+        text-align: center;
+        .title {
+            @include content-title-md;
+        }
+
+        .description {
+            @include content-description-md;
+        }
+    }
+
+    @media (min-width:768px) {
+        .title {
+            @include content-title-lg;
+        }
+
+        .description {
+            @include content-description-lg;
+        }
+    }
+}
+
+// Mixin for casestudy content with grid
+@mixin imageDescBox {
+    .image-desc-box {
+        background-color: #F8F8F8;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+
+        .casestudy-content-1 {
+            grid-area: content-1;
+            @include caseStudyContent
+        }
+
+        .casestudy-content-2 {
+            grid-area: content-2;
+            @include caseStudyContent
+        }
+
+        .casestudy-box-image {
+            grid-area: image;
+            img {
+                max-width: 100%;
+                @include imageMaxHeight;
+            }
+        }
+
+        @media (min-width:768px) {
+            grid-template-rows: repeat(2,minmax(0,auto));
+            grid-template-areas: 
+            "image image content-1 content-1"
+            "content-2 content-2 content-2 content-2"
+        };
+        
+        @media (max-width:768px) {
+            text-align: center;
+            grid-template-rows: repeat(3,minmax(0,auto));
+            grid-template-areas: 
+            "image image image image"
+            "content-1 content-1 content-1 content-1"
+            "content-2 content-2 content-2 content-2"
+        };
+    }
+}
