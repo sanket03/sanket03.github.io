@@ -49,7 +49,7 @@
     line-height: 2;
     font-weight: 300;
     > div {
-        padding: 15px 0;
+        padding: 15px 0 0 0;
     }
 }
 
@@ -64,7 +64,7 @@
     line-height: 1.5;
     font-weight: 300;
     > div {
-        padding: 15px 0;
+        padding: 15px  0 0 0;
     }
 }
 
@@ -121,12 +121,13 @@
 
         .casestudy-content-1 {
             grid-area: content-1;
-            @include caseStudyContent
+            @include caseStudyContent;
+            padding-bottom: 0;
         }
 
         .casestudy-content-2 {
             grid-area: content-2;
-            @include caseStudyContent
+            @include caseStudyContent;
         }
 
         .casestudy-box-image {

@@ -3,14 +3,14 @@
     grid-template-columns: repeat(1,50%);
     background-color: #3B78FF;
     color: white;
+    align-items: center;
 
     @media (min-width: 760px) {
         justify-content: space-around;
 
         img {
             grid-area: image;
-            width: 200px;
-            height: 26px;
+            width: 150px;
             margin: 25px 25px;
         }
 
@@ -39,8 +39,7 @@
 
         img {
             grid-area: image;
-            width: 200px;
-            height: 26px;
+            width: 150px;
             margin: 25px 0;
         }
 
