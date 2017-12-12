@@ -5,8 +5,13 @@
         bottom: 100px;
     }
     .row {
-        width: 90%;
-        margin: auto;
+        @media (max-width:1024px) {
+            padding: 0 35px;
+        }
+    
+        @media (min-width:1024px) {
+            padding: 0 70px;
+        }
 
         .col-12 {
             @include boxStyles;

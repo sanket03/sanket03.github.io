@@ -3,11 +3,11 @@
 #casestudy-container {
     // Case study home styles
     #casestudy-home {
+        @include parentContainerPadding;
         background-color: #3B78FF;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         align-items: center;
-        @include parentContainerPadding;
 
         #casestudy-home-content {
             color: #FFF;
@@ -61,6 +61,7 @@
         #casestudy-home-image {
             @include imageMaxHeight;
             grid-area: image;
+            justify-self: flex-end;
             img {
                 max-width: 100%;
                 @include imageMaxHeight;
