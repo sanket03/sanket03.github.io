@@ -94,7 +94,7 @@
             padding: 15px;
 
             @media (max-width:768px) {
-                text-align: center;
+                text-align: left;
                 .title {
                     @include content-title-md;
                 }
@@ -112,6 +112,10 @@
                 .description {
                     @include content-description-lg;
                 }
+            }
+
+            ul {
+                padding: 15px 0 0 40px;
             }
 
             .description {

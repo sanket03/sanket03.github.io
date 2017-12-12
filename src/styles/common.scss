@@ -90,7 +90,6 @@
     
 
     @media (max-width:768px) {
-        text-align: center;
         .title {
             @include content-title-md;
         }
@@ -146,7 +145,6 @@
         };
         
         @media (max-width:768px) {
-            text-align: center;
             grid-template-rows: repeat(3,minmax(0,auto));
             grid-template-areas: 
             "image image image image"
