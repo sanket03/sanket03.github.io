@@ -128,18 +128,12 @@
                     }
                 }
                 .hide {
-                    > li {
-                       visibility: hidden;
-                       height: 0;
-                       transition: all 1s ease;
-                    }
+                    height: 0;
+                    transition: height 1s ease;
                 }
                 
                 .show {
-                    > li {
-                        visibility: visible;
-                        height: 100%;
-                        }
+                    height: 100%;
                 }
             }
         }
