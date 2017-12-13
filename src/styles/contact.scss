@@ -6,9 +6,9 @@
     @include parentContainerPadding;
 
     @media (min-width: 768px) {
-        // background: url('../../src/images/contact.png') no-repeat;
-        // background-size: contain;
-        // background-position: center;
+        background: url('../../src/images/contact.png') no-repeat;
+        background-size: contain;
+        background-position: center;
     }
     
     #upper-container {
