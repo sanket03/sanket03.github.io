@@ -32,22 +32,38 @@ export default class Header extends React.Component {
     render() {
         return (
             <div id = 'header' className = 'container-fluid'>
-                <img src = '../../src/images/MAQlogo.png'/>
+                <a href = 'https://maqsoftware.com/'>
+                    <img src = '../../src/images/MAQlogo.png'/>
+                </a>
                 <button className = 'btn' onClick = {this.toggle}>
                     <i className = "fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <ul id = 'navigation' className = {this.state.isOpen ? 'show' : 'hide'}>
-                    <li><Link to = '/'>Home</Link></li>
+                    <li>
+                        <a href = 'https://maqsoftware.com/'>Home</a>
+                    </li>
                     <li><a>FAQs</a></li>
                     <li id = 'expertise' onClick = {this.showList}>
                         <a>Expertise</a>
                         <ul id = 'expertise-list' className = {this.state.showList ? 'show' : 'hide'}>
-                            <li><a>Data Management</a></li>
-                            <li><a>Artificial Intelligence</a></li>
-                            <li><a>Power BI</a></li>
-                            <li><a>App Development</a></li>
-                            <li><a>Cloud Transformation</a></li>
-                            <li><a>Collaboration and Content</a></li>
+                            <li>
+                                <a href = 'https://maqsoftware.com/expertise/datamanagement'>Data Management</a>
+                            </li>
+                            <li>
+                                <a href = 'https://maqsoftware.com/expertise/artificialintelligence'>Artificial Intelligence</a>
+                            </li>
+                            <li>
+                                <a href = 'https://maqsoftware.com/expertise/powerbi'>Power BI</a>
+                            </li>
+                            <li>
+                                <a href = 'https://maqsoftware.com/expertise/appdevelopment'>App Development</a>
+                            </li>
+                            <li>
+                                <a hnref = 'https://maqsoftware.com/expertise/cloudtransformation'>Cloud Transformation</a>
+                            </li>
+                            <li>
+                                <a href = 'https://maqsoftware.com/expertise/collaborationcontent'>Collaboration and Content</a>
+                            </li>
                         </ul>
                     </li>
 
