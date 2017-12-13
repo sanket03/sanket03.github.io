@@ -2,11 +2,14 @@
 
 #contact-container {
     background-color: rgb(230,236,248);
-    background-size: contain;
     padding-bottom: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
     @include parentContainerPadding;
+
+    @media (min-width: 768px) {
+        // background: url('../../src/images/contact.png') no-repeat;
+        // background-size: contain;
+        // background-position: center;
+    }
     
     #upper-container {
         text-align: center;
