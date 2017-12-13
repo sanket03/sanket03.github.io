@@ -52,7 +52,7 @@ export default class Header extends React.Component {
                     </li>
 
                     <li>
-                        <ScrollLink to = 'contact-container' smooth={true} duration={2000} delay = {200}>
+                        <ScrollLink to = 'contact-container' smooth = 'easeOutCubic' duration={2000} delay = {200}>
                             Contact
                         </ScrollLink>
                     </li>

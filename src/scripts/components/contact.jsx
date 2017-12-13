@@ -2,7 +2,7 @@ import React from 'react';
 
 let Contact = () => {
     return (
-        <div id = 'contact-container'>
+        <div id = 'contact-container' style = {{backgroundImage: "url('../../src/images/contact.png')"}}>
             <div id = 'upper-container'>
                 <div>Get in touch</div>
                 <div>

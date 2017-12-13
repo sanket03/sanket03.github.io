@@ -68,7 +68,10 @@
         grid-template-rows: minmax(0,auto);;
         grid-template-areas: 
         "content content image image"
-        "content content image image"
+        "content content image image";
+        .image {
+            justify-self: flex-end;
+        }
     };
     
     @media (max-width:768px) {
@@ -77,10 +80,5 @@
         grid-template-areas: 
         "image image image image"
         "content content content content";
-        image {
-            img {
-                justify-self: flex-end;
-            }
-        }
     };
 }
