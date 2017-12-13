@@ -16,12 +16,13 @@ export default class Header extends React.Component {
 
     toggle() {
         this.setState({
-            isOpen: !this.state.isOpen
+            isOpen: !this.state.isOpen,
+            showList: false
         });
     }
 
     showList() {
-        if(window.innerWidth <= 768) {
+        if(window.innerWidth <= 900) {
             this.setState({
                 showList: !this.state.showList
             });
@@ -37,7 +38,7 @@ export default class Header extends React.Component {
                 </button>
                 <ul id = 'navigation' className = {this.state.isOpen ? 'show' : 'hide'}>
                     <li><Link to = '/'>Home</Link></li>
-                    <li>FAQs</li>
+                    <li><a>FAQs</a></li>
                     <li id = 'expertise' onClick = {this.showList}>
                         <a>Expertise</a>
                         <ul id = 'expertise-list' className = {this.state.showList ? 'show' : 'hide'}>
