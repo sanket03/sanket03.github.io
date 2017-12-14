@@ -1,8 +1,7 @@
 import React from 'react';
 import Home from './home.jsx';
 import Categories from './categories.jsx';
-import Pages from '../containers/pages.jsx';
-import Contact from './contact.jsx';
+import Pages from '../containers/pages.jsx'
 
 import config from '../utilities/config';
 
@@ -32,7 +31,6 @@ let App = ()=>{
             <Home/>
             {renderCategories()}
             {renderPages()}
-            <Contact/>
         </div>
     );
 } 
