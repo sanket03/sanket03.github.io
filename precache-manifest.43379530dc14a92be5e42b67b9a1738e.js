@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/Azure Machine Learning.ca9f771d.bin"
   },
   {
-    "revision": "01d0529b0d5cceb6ed18",
-    "url": "/static/css/main.19815f4e.chunk.css"
+    "revision": "ca9db38f4f1e41fa7e01",
+    "url": "/static/css/main.fd57fc5f.chunk.css"
   },
   {
     "revision": "067502de05cc0c48c837",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/Azure Data Factory.9cd84816.bin"
   },
   {
-    "revision": "01d0529b0d5cceb6ed18",
-    "url": "/static/js/main.01d0529b.chunk.js"
+    "revision": "ca9db38f4f1e41fa7e01",
+    "url": "/static/js/main.ca9db38f.chunk.js"
   },
   {
     "revision": "21e4c5a254749fec5c7712bac32708b3",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/WebApps.a1632dda.bin"
   },
   {
-    "revision": "75b768ba0cf077bb3107cc1e22756ef5",
+    "revision": "4c70351fb1b3db2c952911cadaf90784",
     "url": "/index.html"
   }
 ];
