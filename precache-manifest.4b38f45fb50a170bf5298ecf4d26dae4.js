@@ -1,23 +1,35 @@
 self.__precacheManifest = [
   {
-    "revision": "4e7776bc8054a71165dde77b1c3d129e",
-    "url": "/static/media/Azure KeyVault_COLOR.4e7776bc.png"
+    "revision": "cae9e45820e9af0c71f5ea2034375d99",
+    "url": "/static/media/Azure HDInsight_COLOR.cae9e458.png"
   },
   {
-    "revision": "775f1822ea91bc285f44",
-    "url": "/static/css/main.02a56ec7.chunk.css"
+    "revision": "0ba9b338c6325eed9887",
+    "url": "/static/css/main.e19ebd37.chunk.css"
   },
   {
-    "revision": "55de50e44d51e44d8f3d",
-    "url": "/static/js/1.55de50e4.chunk.js"
+    "revision": "462d525b98b5edf79bed",
+    "url": "/static/js/1.462d525b.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "504ac7ce5f8661d89b55468ae4b4cfc8",
-    "url": "/static/media/export_image.504ac7ce.svg"
+    "revision": "84e94fc3f1149aeeee9dbae90a4a710e",
+    "url": "/static/media/download.84e94fc3.svg"
+  },
+  {
+    "revision": "f1e2c06def03955640109387d1b4225a",
+    "url": "/static/media/azure-logo.f1e2c06d.svg"
+  },
+  {
+    "revision": "b7c6484f7f2e8a6740e5601b6208eb3a",
+    "url": "/static/media/arrow_back.b7c6484f.svg"
+  },
+  {
+    "revision": "68d5339d67d46d7c3e4e71a062cdd617",
+    "url": "/static/media/error_outline.68d5339d.svg"
   },
   {
     "revision": "895bc44cfd31979450f434120d367bea",
@@ -108,16 +120,16 @@ self.__precacheManifest = [
     "url": "/static/media/Azure HDInsight.a173ebf4.png"
   },
   {
-    "revision": "cae9e45820e9af0c71f5ea2034375d99",
-    "url": "/static/media/Azure HDInsight_COLOR.cae9e458.png"
+    "revision": "0ba9b338c6325eed9887",
+    "url": "/static/js/main.0ba9b338.chunk.js"
   },
   {
     "revision": "63ca5b5f8984907a6b229d72be46e773",
     "url": "/static/media/Azure IoT Hub_COLOR.63ca5b5f.svg"
   },
   {
-    "revision": "775f1822ea91bc285f44",
-    "url": "/static/js/main.775f1822.chunk.js"
+    "revision": "4e7776bc8054a71165dde77b1c3d129e",
+    "url": "/static/media/Azure KeyVault_COLOR.4e7776bc.png"
   },
   {
     "revision": "b4fc7b4ef19f7d0f52808efceb81ee18",
@@ -228,7 +240,7 @@ self.__precacheManifest = [
     "url": "/static/media/webhooks_COLOR.0bdca326.png"
   },
   {
-    "revision": "9c30a586845d9fb39b3ce3edb3cc50b9",
+    "revision": "f69fbd9f2ae695c78fcb6238ea8a1a1e",
     "url": "/index.html"
   }
 ];
